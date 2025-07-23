@@ -33,9 +33,9 @@ def test_firmware_message_not_received_without_reset(port='COM11', baudrate=9600
         ser.close()
 
         if firmware_received:
-            print("❌ FAIL: Firmware version received without pressing reset.")
-        else:
             print("✅ PASS: No firmware message received without reset (expected behavior).")
+        else:
+            print("❌ FAIL: Firmware version received with pressing reset.")
 
     except serial.SerialException as e:
         print(f"❌ ERROR: Could not open port {port}.\n{e}")

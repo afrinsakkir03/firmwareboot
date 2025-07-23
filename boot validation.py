@@ -2,7 +2,7 @@ import serial
 import time
 
 # Replace with your Arduino COM port (e.g., "COM3" on Windows, "/dev/ttyUSB0" on Linux)
-arduino_port = 'COM3'
+arduino_port = 'COM11'
 baud_rate = 9600
 timeout_sec = 5  # Max time to wait for Arduino response
 
